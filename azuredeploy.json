@@ -58,8 +58,7 @@
     },
     "linuxConfiguration_password": { },
     "linuxConfiguration": "[variables(concat('linuxConfiguration_',parameters('authenticationType')))]",
-    "scriptUrlNvidiaDrivers": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/intel-lustre-clients-on-centos",
-      [concat(variables('baseUrl'),'nvidia_drivers.sh')]"
+    "scriptUrlNvidiaDrivers": "https://raw.githubusercontent.com/grandparoach/NSeries/master/nvidia_drivers.sh"
     },
     "resources": [
         {
@@ -126,8 +125,7 @@
           "commandToExecute": "[concat('bash nvidia_drivers.sh'))]"
         }
       }
-    }
-  ],
+    },
 
         {
             "type": "Microsoft.Network/networkInterfaces",
