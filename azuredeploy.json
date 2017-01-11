@@ -88,7 +88,7 @@
                     "dataDisks": []
                 },
                 "osProfile": {
-                    "computerName": "[parameters('VMName')]",
+                   "computerName": "[parameters('VMName')]",
                     "adminUsername": "[parameters('adminUsername')]",
                     "adminPassword": "[parameters('adminPassword')]",
                     "linuxConfiguration": "[variables('linuxConfiguration')]"
@@ -122,7 +122,7 @@
           "fileUris": [
             "[variables('scriptUrlNvidiaDrivers')]"
           ],
-          "commandToExecute": "[concat('bash nvidia_drivers.sh'))]"
+          "commandToExecute": "[concat('bash nvidia_drivers.sh')]"
         }
       }
     },
