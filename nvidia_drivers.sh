@@ -1,7 +1,7 @@
 [[ -z "$HOME" || ! -d "$HOME" ]] && { echo 'fixing $HOME'; HOME=/root; } 
 export HOME 
 
-yum -y update
+yum -y update --exclude=WALinuxAgent
 
 yum -y install kernel-devel
 rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
